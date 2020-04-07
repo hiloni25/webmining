@@ -98,11 +98,11 @@ def loadData(parent_dir):
 
 text_tests, label_tests, text_trains, label_trains=loadData('/Users/Hilony/Downloads/20_newsgroups')
 
-counter = CountVectorizer()
-counter.fit(text_trains)
-
-#counter = TfidfVectorizer()
+#counter = CountVectorizer()
 #counter.fit(text_trains)
+
+counter = TfidfVectorizer()
+counter.fit(text_trains)
 
 
 #count the number of times each term appears in a document and transform each doc into a count vector
