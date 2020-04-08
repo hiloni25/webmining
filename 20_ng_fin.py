@@ -19,9 +19,9 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score
 import os
 import nltk,re
-from nltk.tokenize import sent_tokenize
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.neural_network import MLPClassifier
+#from nltk.tokenize import sent_tokenize
+#from sklearn.feature_extraction.text import TfidfVectorizer
+#from sklearn.neural_network import MLPClassifier
 from sklearn.linear_model import LogisticRegression
 
 
@@ -79,9 +79,6 @@ text_tests, label_tests, text_trains, label_trains=loadData('/Users/Hilony/Downl
 
 counter = CountVectorizer()
 counter.fit(text_trains)
-
-#counter = TfidfVectorizer()
-#counter.fit(text_trains) 
 
 
 #count the number of times each term appears in a document and transform each doc into a count vector
